@@ -213,7 +213,7 @@ HTTPS_PORT=443
 HTTPS_BIND=
 
 # Redirect HTTP connections to HTTPS - y/n
-HTTP_REDIRECT=y
+HTTP_REDIRECT=n
 
 # ------------------------------
 # Other bindings
@@ -434,7 +434,7 @@ SPAMHAUS_DQS_KEY=
 # Can either be true or false | Defaults to true
 # WARNING: MAKE SURE TO PROPERLY CONFIGURE IPv6 ON YOUR HOST FIRST BEFORE ENABLING THIS AS FAULTY CONFIGURATIONS CAN LEAD TO OPEN RELAYS!
 # A COMPLETE DOCKER STACK REBUILD (compose down && compose up -d) IS NEEDED TO APPLY THIS.
-ENABLE_IPV6=${IPV6_BOOL}
+ENABLE_IPV6=n
 
 # Prevent netfilter from setting an iptables/nftables rule to isolate the mailcow docker network - y/n
 # CAUTION: Disabling this may expose container ports to other neighbors on the same subnet, even if the ports are bound to localhost

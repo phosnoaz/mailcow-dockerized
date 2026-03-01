@@ -609,6 +609,7 @@ services:
 
 networks:
   nginx_core:
+    external: true
   mailcow-network:
     driver: bridge
     driver_opts:
